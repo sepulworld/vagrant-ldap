@@ -3,7 +3,7 @@ exec { "apt-get update":
 }
 
 node default {
-  class { 'puppet-openldap':
+  class { 'ldap':
     server      => true,
     ssl         => false,
   }

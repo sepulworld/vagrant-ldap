@@ -1,0 +1,40 @@
+ldap
+
+This is the ldap module.
+
+This currently stands as the scratch file for the LDAP module. While under 
+development, it has the following goals.
+
+- Provide a generic LDAP type
+    - OpenLDAP (2.3 and 2.4 branches)
+  - Allow configuration of many types of LDAP servers
+    - Each installed type will have a custom provider
+  - Provide the ability to create add-on hooks
+    - Kerberos
+    - RADIUS
+    - SASL
+    - DNS
+
+Scope of initial module are the following operating systems
+  - Debian Squeeze
+  - Debian Lenny
+  - Centos 5
+  - Fedora 14
+  - Ubuntu Maverick
+  - Ubuntu Lucid
+  - OpenSuSE
+
+
+TODO: Client, add SSL Support
+TODO: Client, add SASL Support
+
+Default SSL support: CERT and KEY @ /etc/ssl/{cert,key}/ldap.pem
+
+BUG: When testing by applying server-only configuration, manifest will install
+client libraries as well. Does implying server configuration mean that I want
+to automatically setup a client?
+
+
+Things that are needed:
+  * Authenticated Bind for PAM (Want to create a user to bind as)
+  * Break up PAM.D modules into individual templates and re-use across linux variants as appropriate. 

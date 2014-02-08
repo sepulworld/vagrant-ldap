@@ -1,0 +1,7 @@
+<% if ensure_real == 'present' %>
+session     sufficient      pam_ldap.so
+<% end %>
+session	[default=1]		pam_permit.so
+session	requisite			pam_deny.so
+session	required			pam_permit.so
+session	required	    pam_unix.so 
