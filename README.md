@@ -3,5 +3,7 @@ vagrant-ldap
 
 Vagrant for OpenLDAP testing
 
-Using the jfryman/puppet-openldap openldap module.
+Provide custom schemas in /modules/ldap/files/schemas/
+
+jfryman/puppet-openldap openldap module.
 
