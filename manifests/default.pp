@@ -9,14 +9,19 @@ node default {
   }
 }
 
-ldap::define::schema {'mochi.schema':
-  ensure => 'present',
-  source => 'puppet:///modules/ldap/schema/mochi.schema',
-}
-
 ldap::define::domain {'puppetlabs.test':
-  basedn   => 'dc=puppetlabs,dc=test',
-  rootdn   => 'cn=admin',
+  basedn   => 'dc=mochimedia,dc=net',
+  rootdn   => 'cn=dsadmin',
   rootpw   => 'test',
   auth_who => 'anonymous'
+}
+
+ldap::define::schema {'inetorgperson':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/inetorgperson.schema',
+}
+
+ldap::define::schema {'mochi':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/mochi.schema',
 }
