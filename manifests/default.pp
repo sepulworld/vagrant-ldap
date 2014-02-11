@@ -16,7 +16,7 @@ ldap::define::domain {'brodate.test':
   auth_who => 'anonymous'
 }
 
-ldap::define::schema {'mochi':
+ldap::define::schema {'brodate':
   ensure => present,
-  source => 'puppet:///modules/ldap/schema/mochi.schema',
+  source => 'puppet:///modules/ldap/schema/brodate.schema',
 }
