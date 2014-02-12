@@ -20,3 +20,13 @@ ldap::define::schema {'brodate':
   ensure => present,
   source => 'puppet:///modules/ldap/schema/brodate.schema',
 }
+
+ldap::define::schema {'sudo':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/sudo.schema',
+}
+
+ldap::define::schema {'misc':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/misc.schema',
+}
