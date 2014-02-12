@@ -30,3 +30,8 @@ ldap::define::schema {'misc':
   ensure => present,
   source => 'puppet:///modules/ldap/schema/misc.schema',
 }
+
+ldap::define::schema {'openssh':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/openssh.schema',
+}
