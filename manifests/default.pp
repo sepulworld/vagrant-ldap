@@ -40,3 +40,8 @@ ldap::define::schema {'inetorgperson':
   ensure => present,
   source => 'puppet:///modules/ldap/schema/inetorgperson.schema',
 }
+
+ldap::define::schema {'nis':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/nis.schema',
+}

@@ -4,8 +4,6 @@
 #
 include <%= scope.lookupvar('ldap::params::lp_openldap_conf_dir') %>/schema/core.schema
 include <%= scope.lookupvar('ldap::params::lp_openldap_conf_dir') %>/schema/cosine.schema
-include <%= scope.lookupvar('ldap::params::lp_openldap_conf_dir') %>/schema/nis.schema
-include <%= scope.lookupvar('ldap::params::lp_openldap_conf_dir') %>/schema/inetorgperson.schema
 
 <%- # This section exists as RHEL based distros have modules compiled in -%>
 <%- if scope.lookupvar('ldap::params::lp_openldap_modulepath') != 'UNDEF' -%>
