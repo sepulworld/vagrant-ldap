@@ -55,7 +55,7 @@ objectClass (
   1.3.6.1.4.1.15953.9.2.1
   NAME 'sudoRole'
   SUP top
-  STRUCTURAL
+  AUXILIARY
   DESC 'Sudoer Entries'
   MUST ( cn )
   MAY ( sudoUser $ sudoHost $ sudoCommand $ sudoRunAs $ sudoOption $ description )
