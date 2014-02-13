@@ -41,7 +41,13 @@ ldap::define::schema {'inetorgperson':
   source => 'puppet:///modules/ldap/schema/inetorgperson.schema',
 }
 
-ldap::define::schema {'nis':
+file {
+  '/etc/ldap/schema/nis.schema':
+    ensure => file,
+    source => 'puppet:///modules/ldap/schema/nis.schema';
+  }
+
+ldap::define::schema {'dyngroup':
   ensure => present,
-  source => 'puppet:///modules/ldap/schema/nis.schema',
+  source => 'puppet:///modules/ldap/schema/dyngroup.schema',
 }
