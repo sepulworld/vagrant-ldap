@@ -35,3 +35,8 @@ ldap::define::schema {'openssh':
   ensure => present,
   source => 'puppet:///modules/ldap/schema/openssh.schema',
 }
+
+ldap::define::schema {'inetorgperson':
+  ensure => present,
+  source => 'puppet:///modules/ldap/schema/inetorgperson.schema',
+}
