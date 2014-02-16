@@ -6,6 +6,7 @@ node default {
   class { 'ldap':
     server      => true,
     ssl         => false,
+    before      => Exec['input_output.ldif'],
   }
 }
 
@@ -50,4 +51,9 @@ file {
 ldap::define::schema {'dyngroup':
   ensure => present,
   source => 'puppet:///modules/ldap/schema/dyngroup.schema',
+}
+
+exec {'input_output.ldif':
+  require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"]], 
+  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output.ldif'
 }
