@@ -14,10 +14,6 @@ vagrant up ; vagrant ssh
 ```
 You are now able to query the vagrant built OpenLDAP server via 127.0.0.1:389 
 
-jfryman/puppet-openldap openldap module used as submodule
-
-Random LDAP entries generated and loaded via output.ldif (http://ldapwiki.willeke.com/wiki/LDIF%20Generator)
-
 You can update the domain to something other than what I have it set to, dc=brodate,dc=net.  I also, set the admin user to "cn=dsadmin,dc=brodate,dc=net".  These settings can be changed in the manifests/default.pp puppet manifest.
 
 Example searches after vagrant up:
@@ -33,3 +29,6 @@ ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h l
 
 returns KielstrG uid directory listing
 ```
+jfryman/puppet-openldap openldap module used as submodule
+
+Random LDAP entries generated and loaded via output.ldif (http://ldapwiki.willeke.com/wiki/LDIF%20Generator)
