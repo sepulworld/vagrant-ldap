@@ -1524,14 +1524,6 @@ objectClass: top
 objectClass: organizationalPerson
 sn: david
 
-dn: mailLocalAddress=dcmania@gmail.com,ou=External Contacts,dc=brodate,dc=net
-cn: dcmania
-mailLocalAddress: dcmania@gmail.com
-objectClass: inetLocalMailRecipient
-objectClass: top
-objectClass: organizationalPerson 
-sn: dcmania
-
 dn: mailLocalAddress=devilwishmaster@hotmail.com,ou=External Contacts,dc=brodate,dc=net
 cn: devilwishmaster
 mailLocalAddress: devilwishmaster@hotmail.com
@@ -1622,33 +1614,19 @@ sn: 10mzh
 
 dn: cn=poker,ou=groups,dc=brodate,dc=net
 uniqueMember: mail=10mhztime@gmail.com,ou=External Contacts,dc=brodate,dc=net
-uniqueMember: mail=timfisherman@gmail.com,ou=External Contacts,dc=brodate,dc
- =net
-uniqueMember: mail=blomtime@gmail.com,ou=External Contacts,dc=brodate,dc
- =net
-uniqueMember: mail=dartshooters@gmail.com,ou=External Contacts,dc=brodate,dc=n
- et
-uniqueMember: mail=david@sfonwizardnotice.com,ou=External Contacts,dc=brodate,dc=ne
- t
-uniqueMember: mail=dcmania@gmail.com,ou=External Contacts,dc=brodate,dc=ne
- t
-uniqueMember: mail=devilwishmaster@hotmail.com,ou=External Contacts,dc=brodate,d
- c=net
-uniqueMember: mail=design@zanevera.com,ou=External Contacts,dc=brodate,dc=
- net
-uniqueMember: mail=guy_zane@yahoo.com,ou=External Contacts,dc=brodate,dc=ne
- t
+uniqueMember: mail=timfisherman@gmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=blomtime@gmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=dartshooters@gmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=david@sfonwizardnotice.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=devilwishmaster@hotmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=design@zanevera.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=guy_zane@yahoo.com,ou=External Contacts,dc=brodate,dc=net
 uniqueMember: mail=jp@mittech.edu,ou=External Contacts,dc=brodate,dc=net
-uniqueMember: mail=kevin.woodriff@gmail.com,ou=External Contacts,dc=brodate,dc=
- net
-uniqueMember: mail=kooz.maknonoinsky@gmail.com,ou=External Contacts,dc=brodatem
- edia,dc=net
-uniqueMember: mail=matt@dizzler.org,ou=External Contacts,dc=brodate,dc=n
- et
-uniqueMember: mail=paul@schoolcheato.com,ou=External Contacts,dc=brodate,dc=n
- et
-uniqueMember: mail=zoom.henderson@gmail.com,ou=External Contacts,dc=brodateme
- dia,dc=net
+uniqueMember: mail=kevin.woodriff@gmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=kooz.maknonoinsky@gmail.com,ou=External Contacts,dc=brodatemedia,dc=net
+uniqueMember: mail=matt@dizzler.org,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=paul@schoolcheato.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=zoom.henderson@gmail.com,ou=External Contacts,dc=brodatemedia,dc=net
 cn: poker
 gidNumber: 50063
 mailLocalAddress: poker@brodate.com
