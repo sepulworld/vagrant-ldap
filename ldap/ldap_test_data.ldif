@@ -1,0 +1,4473 @@
+dn: ou=Special Users,dc=brodate, dc=net
+description: Special Administrative Accounts
+ou: Special Users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=employees,ou=People,dc=brodate,dc=net
+objectClass: top
+objectClass: organizationalunit
+description: Brodate full time employees
+ou: employees
+
+dn: uid=richard,ou=employees,ou=People,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: 493.8421
+telephoneNumber: 493.8241
+labeledURI: spaces.live.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetorgperson
+objectClass: posixAccount
+objectClass: brodateUser
+objectClass: shadowaccount
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+objectClass: sudoRole
+brodatehosts: *.brodate.net
+mailLocalAddress: diq@brodate.com
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+c: US
+physicalDeliveryOfficeName: Brodate HQ
+brodategamesid: richard
+homePhone: +1.415.493.8621
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: verbal
+cn: Richard Peebody 
+uid: richard
+mailLocalAddress: richard@brodate.com
+uidNumber: 50001
+gidNumber: 50000
+sn: Peebody
+givenName: Richard
+aimid: boomshaka
+gtalkid: richard@brodate.com
+yimid: boomshakyim
+msnid: boomshaka@hotmail.com
+twitterid: boomshaktweet
+website: spaces.live.com
+title: Director of Network Operations
+
+dn: cn=brodate,ou=Groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=rtb,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=weston,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=katelyn, ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=macdisel,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dan,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=opennms-xmpp,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=shela,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zaners,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: posixGroup
+cn: brodate
+gidNumber: 50000
+
+dn: cn=contractors, ou=Groups, dc=brodate, dc=net
+uniqueMember: uid=ebutts,ou=contractors,ou=people,dc=brodate,dc=net
+cn: contractors
+gidNumber: 49000
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: posixgroup
+
+dn: cn=dev,ou=Groups, dc=brodate, dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=git,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ebutts,ou=contractors,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zaners,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: posixgroup
+cn: dev
+description: dev
+gidNumber: 50001
+
+dn: ou=contractors,ou=People,dc=brodate,dc=net
+objectClass: top
+objectClass: organizationalunit
+ou: contractors
+
+dn: cn=ops,ou=Groups, dc=brodate, dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: nisMailAlias
+rfc822MailMember: ops@brodate.com
+description: ops
+cn: ops
+gidNumber: 50002
+
+dn: uid=jameson,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+mailLocalAddress: jamesonh@brodate.com
+mobile: +1.415.333.8334
+website: www.bigtime.net
+facsimileTelephoneNumber: +1.888.811.1333
+telephoneNumber: +1.415.287.3344
+postalAddress: 111 Elevator St., 5th Floor
+yimid: jasdklfj@yahoo.com
+msnid: msnksdfklj@yahoo.com
+gtalkid: jameson@brodate.com
+aimid: jfjjasdkd@aol.com
+facebookid: ffouui
+twitterid: ffouuitweet
+brodategamesid: ffoouu
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: jameson
+mailLocalAddress: jameson@brodate.com
+uidNumber: 50002
+sn: Fuii
+title: CEO
+gidNumber: 50000
+givenName: Jameson
+cn: Jameson Fuii
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: e01sNX1tMWJEdmkva1VuOC9yNlNNVnNxOVFnPT0=
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+sshpublickey: test
+sshpublickey:: dGVzdDIK
+sshpublickey: test22
+postalAddress: 331 S Tesla Ave #6507, Rover, CA 91789
+telephoneNumber: +1.415.445-2333
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+mobile: +1.415.728.6507
+website: http://bob.teslaman.net
+yimid: teslazing
+msnid: teslazingmsn
+gtalkid: bob@brodate.com
+aimid: teslazing
+facebookid: teslabob
+twitterid: teslabobtweet
+brodategamesid: bob
+st: California
+l: San Francisco
+facsimileTelephoneNumber: +1.415.566.6444
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+brodateaccess: trac
+brodateaccess: svn
+uid: bob
+mailLocalAddress: bob@brodate.com
+uidNumber: 50003
+sn: Kingston
+title: CTO
+gidNumber: 50000
+givenName: Bob
+cn: Bob Kingston
+
+dn: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+facebookid: etownsen
+title: VP of Engineering
+mailLocalAddress: moshen@brodate.com
+gtalkid: emad@brodate.com
+twitterid: etownsen
+brodategamesid: emad
+sshpublickey: ssh-dss AAAAB3NzaC1kc3MAAACBALEm43gpFNrqpRoQkgdtBn1ysOKCY9xoNzec
+ f2e4dgwzl9KAlgY0CmpOrpyiNEu2V+NOJyxj69awrF8a7OaaoPNfPCkBJwdg0+NKHyABhU9qW3Zii
+ s0NGSHGb54DVCeA4l1V5eUoxq2hkIshhLU2Mh/0D9X1e5E1y3egvHXGWCI5AAAAFQD3A4kCuKZ0Lj
+ PYXRNMnarepr+EOwAAAIBw8jLnjessuYq+eWcQjFC4PjQWAVjNUSms2uFD1j3T4O0kMMRCDixlxxH
+ 0nzNsidf60SyVA/kt03UhWWhtz0PRhu9qLCopy8a3mm2l4lgkwJfPM+v1yFGJn1R+TM/ta855Csy6
+ frMPxwizHiYNv+I5piKylyEFB5g6W0TNK+3dbAAAAIAifytjjuQ33IJUVXaGKJoHYMmtVX7/V/kO7
+ BhlxIOGraradHVmNashtuaww3CUjtb9HvwwmeU1kvs4DewNtdPoRVwhkyeHPQFzEyn2a0xbo16oNs
+ AkfxAaLacAt7dwXbiaLYRoqImJfWQN3G9yQm9iItVMaikqBrRwOCrSziiiiing emad@townsen
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+telephoneNumber: +1.415.645.5599
+mobile: +1.214.223.3300
+facsimileTelephoneNumber: +1.415.688.9999
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+brodateaccess: trac
+brodateaccess: svn
+uid: emad
+mailLocalAddress: emad@brodate.com
+uidNumber: 50006
+sn: Townsen
+manager: uid=moshen,ou=employees,ou=people,dc=brodate,dc=net
+homeDirectory: /home/emad
+gidNumber: 50000
+givenName: Emad
+cn: Emad Townsen
+loginShell: /bin/bash
+
+dn: uid=neil,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: +1.730.324.4236
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+brodateaccess: trac
+brodateaccess: svn
+uid: neil
+mailLocalAddress: neil@brodate.com
+uidNumber: 50009
+sn: Wizorrd
+title: Platform Engineer
+gidNumber: 50000
+givenName: Neil
+cn: Neil Wizorrd
+
+dn: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+telephoneNumber: +1.415.228.4651
+mobile: +1.415.373.2234
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+userPassword:: e0NSWVBUfWZwMzdLM0FKVFVTeUE=
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: justin
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: justin@brodate.com
+uidNumber: 50012
+sn: Downton
+manager: uid=jameson,ou=employees,ou=people,dc=brodate,dc=net
+homeDirectory: /home/justin
+title: VP of Business Development
+gidNumber: 50000
+givenName: Justin
+cn: Justin Downton
+loginShell: /bin/bash
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=alexander,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+website: http://www.alexande.com
+twitterid: alexandertime
+brodategamesid: alexandertime
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+mobile: +1.911.223.2233
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: alexander
+mailLocalAddress: alexander@brodate.com
+uidNumber: 50014
+sn: Shen
+title: Business Developer Manager
+gidNumber: 50000
+givenName: Alexander
+cn: Alexander Downton
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=osakajoe,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+title: Sr. Director of Advertising
+gtalkid: osakazmoke
+aimid: osakazmoke1
+facebookid: osakazmokey
+twitterid: @osakazmoke
+yimid: osakazmoke
+brodategamesid: osakazmoke
+telephoneNumber: +1.415.694.1840
+mobile: +1.408.228.2231
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+c: US
+uid: osakajoe
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: osakajoe@brodate.com
+uidNumber: 50015
+sn: Zmoke
+gidNumber: 50000
+givenName: Joe
+cn: Joe Zmoke
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+telephoneNumber: +1.415.445.2233
+mobile: +1.415.334.5566
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+userPassword:: e0NSWVBUfU5za0dZdVVUQS5UZ28=
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: josh
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: josh@brodate.com
+uidNumber: 50016
+sn: Liveitup
+manager: uid=jameson,ou=employees,ou=people,dc=brodate,dc=net
+homeDirectory: /home/josh
+title: President
+gidNumber: 50000
+givenName: Josh
+cn: Josh Liveitup
+loginShell: /bin/bash
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+telephoneNumber: +1.415.311.2233
+mobile: +1.415.311.3344
+mailLocalAddress: seb@brodate.com
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+userPassword:: e0NSWVBUfVBPNjhvLmdNVlpLakk=
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+givenName: Sebastien
+uid: sebastien
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: sebastien@brodate.com
+uidNumber: 50017
+sn: Rocks
+homeDirectory: /home/sebastien
+title: Director of Sexy
+gidNumber: 50000
+cn: Seb Rocks
+loginShell: /bin/bash
+manager: uid=ryan,ou=employees,ou=people,dc=brodate,dc=net
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=ryan,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+telephoneNumber: +1.415.887.2233
+mobile: +1.473.223.4444
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+brodateaccess: trac
+brodateaccess: svn
+uid: ryan
+mailLocalAddress: ryan@brodate.com
+uidNumber: 50018
+sn: Nitros
+title: VP of Product
+gidNumber: 50000
+givenName: Ryan
+cn: Ryan Nitros
+
+dn: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+gtalkid: cjankos@brodate.com
+twitterid: BigJokes
+brodategamesid: cjokesalot
+userPassword:: e01ENX1lRDJNOEdabERnb2FoVlNhN2JIY1hBPT0=
+telephoneNumber: +1.650.222.3344
+mobile: +1.650.222.2355
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: cjankos
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: cjankos@brodate.com
+uidNumber: 50021
+sn: Jokes
+manager: uid=osakajoe,ou=employees,ou=people,dc=brodate,dc=net
+homeDirectory: /home/cjankos
+title: Ad Ops Sales
+gidNumber: 50000
+givenName: Chris
+cn: Chris Jokes
+loginShell: /bin/bash
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=amanda,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+website: almond.tumblr.com
+twitterid: supercool
+facebookid: hypercool
+brodategamesid: amanda
+mobile: +1.415.333.2299
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: amanda
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+mailLocalAddress: amanda@brodate.com
+uidNumber: 50023
+sn: Ipa
+title: Office Manager
+gidNumber: 50000
+givenName: Amanda
+cn: Amanda Ipa
+brodateaccess: trac
+brodateaccess: svn
+
+dn: uid=nboling,ou=contractors,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX1EcWF4RGQ3MFREVFRxYmlZMUVzWDVRPT0=
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: verbal
+mailLocalAddress: nboling@consulting.com
+uidNumber: 50029
+uid: nboling
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+sn: Boling
+manager: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+homeDirectory: /home/nboling
+gidNumber: 49000
+givenName: Nancy
+cn: Ned Boling
+loginShell: /bin/bash
+
+dn: ou=shanda,ou=People, dc=brodate, dc=net
+objectClass: top
+objectClass: organizationalunit
+ou: shanda
+
+dn: cn=shanda,ou=Groups,dc=brodate,dc=net
+gidNumber: 49999
+cn: shanda
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: posixgroup
+
+dn: uid=katie,ou=contractors,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+uidNumber: 50030
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: partyzone
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+uid: katie
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+sn: Summers
+gidNumber: 49000
+givenName: Katie
+cn: Katie Summers
+
+dn: uid=autobrodate,ou=special users,dc=brodate,dc=net
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: pylons
+brodateaccess: builds
+gidNumber: 50004
+userPassword:: e0NSWVBUfW5YQU8wZDFQLzJVTG8=
+uid: autobrodate
+objectClass: posixAccount
+objectClass: organizationalPerson
+objectClass: top
+objectClass: brodateUser
+uidNumber: 41001
+homeDirectory: /home/autobrodate
+cn: autobrodateUser
+loginShell: /sbin/nologin
+sn: autobrodate
+
+dn: uid=katiesummers,ou=contractors,ou=people,dc=brodate,dc=net
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: verbal
+uidNumber: 50033
+userPassword:: e0NSWVBUfXlPRFdKMWgvQ1Z0TXM=
+c: US
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+manager: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uid: katiesummers
+mailLocalAddress: katie@keepingitreal.net
+sn: Summers
+homeDirectory: /home/katiesummers
+givenName: Katie
+cn: Katie Summers
+loginShell: /bin/bash
+gidNumber: 49000
+
+dn: uid=nancy,ou=contractors,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX1EcWF4RGQ3MFREVFRxYmlZMUVzWDVRPT0=
+description: DELETED
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+mailLocalAddress: nboling@brodate.com
+uidNumber: 50034
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: partyzone
+c: US
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: nancy
+sn: Boling
+givenName: Nancy
+cn: Nancy Boling
+gidNumber: 49000
+
+dn: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+mobile: 650.307.2009
+homePhone: 650.333.2099
+title: Controller
+facsimileTelephoneNumber: 415.911.2316
+l: San Francisco, CA 94105
+telephoneNumber: 415.333.0099
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+userPassword:: e0NSWVBUfWRrakd6dmUuSFZFbEU=
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uidNumber: 50024
+manager: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uid: minfang
+mailLocalAddress: minfang@brodate.com
+sn: Powers
+homeDirectory: /home/minfang
+givenName: MinFang
+cn: MinFang
+loginShell: /bin/bash
+gidNumber: 50000
+brodateaccess: trac
+brodateaccess: svn
+
+dn: cn=roleaccounts,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=autobrodate,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=admin,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=dirsync,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=mail,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=support,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=doubleclick,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=opennms,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=git,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=git-push,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=contact,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=autobrodate2,ou=special users,dc=brodate,dc=net
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: top
+gidNumber: 50004
+cn: roleaccounts
+
+dn: uid=admin,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+mailLocalAddress: admin@brodate.com
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+loginShell: /sbin/nologin
+cn: adminUser
+homeDirectory: /home/admin
+uidNumber: 41002
+uid: admin
+sn: admin
+
+dn: uid=arf,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+objectClass: organizationalPerson
+sn: arf
+cn: arfUser
+uidNumber: 41003
+uid: arf
+
+dn: uid=dirsync,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+mailLocalAddress: dirsync@brodate.com
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+objectClass: organizationalPerson
+sn: dirsync
+loginShell: /sbin/nologin
+cn: dirsyncUser
+homeDirectory: /home/dirsync
+uidNumber: 41004
+uid: dirsync
+
+dn: uid=mail,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+mailLocalAddress: mail@brodate.com
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+objectClass: organizationalPerson
+sn: mail
+loginShell: /sbin/nologin
+cn: mailUser
+homeDirectory: /home/mail
+uidNumber: 41005
+uid: mail
+
+dn: uid=support,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+givenName: Brodate
+sn: Support
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+objectClass: inetorgperson
+objectClass: organizationalPerson
+objectClass: person
+cn: Brodate Support
+mailLocalAddress: support@brodate.com
+loginShell: /sbin/nologin
+homeDirectory: /home/support
+uidNumber: 41006
+uid: support
+
+dn: cn=netops,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+mailLocalAddress: netops@brodate.com
+cn: netops
+gidNumber: 50006
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=accounting,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: accounting
+gidNumber: 50007
+objectClass: groupofuniquenames
+objectClass: nisMailAlias
+rfc822MailMember: accounting@brodate.com
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=accountspayable,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+cn: accountspayable
+gidNumber: 50008
+objectClass: groupofuniquenames
+objectClass: nisMailAlias
+rfc822MailMember: accountspayable@brodate.com
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=adops,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+cn: adops
+gidNumber: 50009
+rfc822MailMember: adops@brodate.com
+objectClass: groupofuniquenames
+objectClass: nisMailAlias
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=adsense,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: adsense
+gidNumber: 50010
+rfc822MailMember: adsense@brodate.com
+objectClass: groupofuniquenames
+objectClass: nisMailAlias
+objectClass: posixgroup
+objectClass: top
+
+dn: cn=adsmarket_network,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: adsmarket_network
+gidNumber: 50011
+mailLocalAddress: adsmarket_network@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=adv.tw,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=kent.chang@innoxxvffalue.net,ou=External Contacts,dc=brodate
+ ,dc=net
+cn: adv.tw
+gidNumber: 50012
+mailLocalAddress: adv.tw@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectCLass: inetLocalMailRecipient
+objectClass: top
+
+dn: ou=External Contacts,dc=brodate, dc=net
+ou: External Contacts
+objectClass: top
+objectClass: organizationalunit
+
+dn: ou=Mail Aliases,dc=brodate, dc=net
+ou: Mail Aliases
+description: Not for Brodate aliases. Dedicated external aliases only.
+objectClass: top
+objectClass: organizationalunit
+
+dn: cn=advertising,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+cn: advertising
+gidNumber: 50013
+mailLocalAddress: advertising@brodate.com
+objectClass: groupofuniquenames
+objectClass: inetLocalMailRecipient
+objectClass: posixgroup
+objectClass: top
+
+dn: cn=amazon,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+cn: amazon
+gidNumber: 50014
+mailLocalAddress: amazon@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=artix_affiliate,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: artix_affiliate
+gidNumber: 50015
+mailLocalAddress: artix_affiliate@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=auto_account,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: auto_account
+gidNumber: 50016
+mailLocalAddress: auto_account@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=azoogle,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: azoogle
+gidNumber: 50017
+mailLocalAddress: azoogle@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=beta,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=coins,ou=groups,dc=brodate,dc=net
+cn: beta
+gidNumber: 50018
+mailLocalAddress: beta@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=bigfishgames,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: bigfishgames
+gidNumber: 50019
+mailLocalAddress: bigfishgames@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=coins,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: coins
+gidNumber: 50020
+mailLocalAddress: coins@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: mailLocalAddress=support@brodateads.com,ou=External Contacts,dc=brodate,dc=net
+cn: Brodateads Support
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+mailLocalAddress: support@brodateads.com
+objectClass: groupofuniquenames
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=accounts,ou=groups,dc=brodate,dc=net
+cn: accounts
+mailLocalAddress: accounts@brodate.com
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: inetLocalMailRecipient
+
+dn: mailLocalAddress=jason@shastabingo.com,ou=External Contacts,dc=brodate,dc=net
+cn: Shasta Bingo
+mailLocalAddress: jason@shastabingo.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: jason
+
+dn: mailLocalAddress=ping@zingding.com,ou=External Contacts,dc=brodate,dc=net
+cn: Zing Ding
+mailLocalAddress: ping@zingding.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: ping
+
+dn: cn=board,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=jason@shastabingo.com,ou=External Contacts,dc=brodate
+ ,dc=net
+uniqueMember: mail=ping@zingding.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+description: board
+cn: board
+gidNumber: 50023
+mailLocalAddress: board@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=builds,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=Groups,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+cn: builds
+gidNumber: 50024
+mailLocalAddress: builds@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=callreports,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: callreports
+gidNumber: 50025
+mailLocalAddress: callreports@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=china_adsense,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=adops,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+cn: china_adsense
+gidNumber: 50026
+mailLocalAddress: china_adsense@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=cpa,ou=groups,dc=brodate,dc=net
+cn: cpa
+gidNumber: 50027
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+mailLocalAddress: cpa@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=craigslist,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+cn: craigslist
+gidNumber: 50028
+mailLocalAddress: craigslist@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=dmca,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=support,ou=special users,dc=brodate,dc=net
+cn: dmca
+gidNumber: 50030
+mailLocalAddress: dmca@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=info,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: info
+gidNumber: 50031
+mailLocalAddress: info@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=dns-admin,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: dns-admin
+gidNumber: 50032
+mailLocalAddress: dns-admin@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=domains,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: domains
+gidNumber: 50033
+mailLocalAddress: domains@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=execs,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: execs
+gidNumber: 50034
+mailLocalAddress: execs@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=extops,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: extops
+gidNumber: 50035
+mailLocalAddress: extops@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=fax,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+cn: fax
+gidNumber: 50036
+mailLocalAddress: fax@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=filiado_networks,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: filiado_networks
+gidNumber: 50038
+mailLocalAddress: filiado_networks@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=fund,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: fund
+gidNumber: 50039
+mailLocalAddress: fund@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=gambit,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: gambit
+gidNumber: 50040
+mailLocalAddress: gambit@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=google,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: google
+gidNumber: 50041
+mailLocalAddress: google@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=hr,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+cn: hr
+gidNumber: 50042
+mailLocalAddress: hr@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=insertionorder,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+cn: insertionorder
+gidNumber: 50043
+mailLocalAddress: insertionorder@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=inventory,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+cn: inventory
+gidNumber: 50044
+mailLocalAddress: inventory@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=invoicing,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: invoicing
+gidNumber: 50045
+mailLocalAddress: invoicing@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=noc,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: noc
+gidNumber: 50047
+mailLocalAddress: noc@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=mailabuse,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=noc,ou=groups,dc=brodate,dc=net
+cn: mailabuse
+gidNumber: 50048
+mailLocalAddress: mailabuse@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=marketing,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+cn: marketing
+gidNumber: 50049
+mailLocalAddress: marketing@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: mailLocalAddress=rad@solvatenator.com,ou=External Contacts,dc=brodate,dc=net
+cn: solvatenator 
+mailLocalAddress: rad@solvatenator.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: solvatenator
+
+dn: mailLocalAddress=marsvoltamachine@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: marsvolt
+mailLocalAddress: marsvoltamachine@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: marsvolt
+
+dn: cn=marlene,ou=groups,dc=brodate,dc=net
+description: Marlene Ziggyzoo
+uniqueMember: mail=marsvoltamachine@gmail.com,ou=External Contacts,dc=brodate,dc=
+ net
+uniqueMember: mail=rad@solvatenator.com,ou=External Contacts,dc=brodate,dc=net
+cn: marlene
+gidNumber: 50050
+mailLocalAddress: marlene@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=brodate.china,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=execs,ou=groups,dc=brodate,dc=net
+cn: brodate.china
+gidNumber: 50051
+mailLocalAddress: brodate.china@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=brodatebot_web,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=Groups,dc=brodate,dc=net
+cn: brodatebot_web
+gidNumber: 50052
+mailLocalAddress: brodatebot_web@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=brodatecare,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: mail=brodatecare@wp1.brodate.net,ou=External Contacts,dc=brodatem
+ edia,dc=net
+cn: brodatecare
+gidNumber: 50053
+mailLocalAddress: brodatecare@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: mailLocalAddress=brodatecare@wp1.brodate.net,ou=External Contacts,dc=brodate,dc=net
+cn: brodatecare
+mailLocalAddress: brodatecare@wp1.brodate.net
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: brodatecare
+
+dn: cn=brodatechina,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: brodatechina
+gidNumber: 50054
+mailLocalAddress: brodatechina@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=brodatemingle,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+cn: brodatemingle
+gidNumber: 50055
+mailLocalAddress: brodatemingle@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=brodatepayments,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: brodatepayments
+gidNumber: 50056
+mailLocalAddress: brodatepayments@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=moneybookers,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sbcargo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: moneybookers
+gidNumber: 50057
+mailLocalAddress: moneybookers@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+
+dn: cn=ops-alerts,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=Groups,dc=brodate,dc=net
+cn: ops-alerts
+gidNumber: 50058
+mailLocalAddress: ops-alerts@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: ops-alerts
+
+dn: cn=orders,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sbcargo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+cn: orders
+gidNumber: 50059
+mailLocalAddress: orders@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: orders
+
+dn: cn=paypal,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+cn: paypal
+gidNumber: 50060
+mailLocalAddress: paypal@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: paypal
+
+dn: cn=paymentpin,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=paypal,ou=groups,dc=brodate,dc=net
+cn: paymentpin
+gidNumber: 50061
+mailLocalAddress: paymentpin@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: paymentpin
+
+dn: mailLocalAddress=blomtime@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: blomtime
+mailLocalAddress: blomtime@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: blomtime
+
+dn: mailLocalAddress=dartshooters@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: dartshooter
+mailLocalAddress: dartshooters@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: dartshooter
+
+dn: mailLocalAddress=david@sfonwizardnotice.com,ou=External Contacts,dc=brodate,dc=net
+cn: david
+mailLocalAddress: david@sfonwizardnotice.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: david
+
+dn: mailLocalAddress=dcmania@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: dcmania
+mailLocalAddress: dcmania@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson 
+sn: dcmania
+
+dn: mailLocalAddress=devilwishmaster@hotmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: devilwishmaster
+mailLocalAddress: devilwishmaster@hotmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: devilmaster
+
+dn: mailLocalAddress=design@zanevera.com,ou=External Contacts,dc=brodate,dc=net
+cn: designzane
+mailLocalAddress: design@zanevera.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: designzane
+
+dn: mailLocalAddress=guy_zane@yahoo.com,ou=External Contacts,dc=brodate,dc=net
+cn: guyzane
+mailLocalAddress: guy_zane@yahoo.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: guyzane
+
+dn: mailLocalAddress=jp@mittech.edu,ou=External Contacts,dc=brodate,dc=net
+cn: jp
+mailLocalAddress: jp@mittech.edu
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: jp
+
+dn: mailLocalAddress=kevin.woodriff@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: kevin
+mailLocalAddress: kevin.woodriff@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: kevin
+
+dn: mailLocalAddress=kooz.maknonoinsky@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: kooz
+mailLocalAddress: kooz.maknonoinsky@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: kooz
+
+dn: mailLocalAddress=matt@dizzler.org,ou=External Contacts,dc=brodate,dc=net
+cn: matt
+mailLocalAddress: matt@dizzler.org
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: matt
+
+dn: mailLocalAddress=paul@schoolcheato.com,ou=External Contacts,dc=brodate,dc=net
+cn: paulschool
+mailLocalAddress: paul@schoolcheato.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: paulschool
+
+dn: mailLocalAddress=zoom.henderson@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: zoom
+mailLocalAddress: zoom.henderson@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: zoom
+
+dn: mailLocalAddress=timfisherman@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: timfisherman
+mailLocalAddress: timfisherman@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: timfisherman
+
+dn: mailLocalAddress=10mhztime@gmail.com,ou=External Contacts,dc=brodate,dc=net
+cn: 10mzh
+mailLocalAddress: 10mhztime@gmail.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: 10mzh
+
+dn: cn=poker,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=10mhztime@gmail.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=timfisherman@gmail.com,ou=External Contacts,dc=brodate,dc
+ =net
+uniqueMember: mail=blomtime@gmail.com,ou=External Contacts,dc=brodate,dc
+ =net
+uniqueMember: mail=dartshooters@gmail.com,ou=External Contacts,dc=brodate,dc=n
+ et
+uniqueMember: mail=david@sfonwizardnotice.com,ou=External Contacts,dc=brodate,dc=ne
+ t
+uniqueMember: mail=dcmania@gmail.com,ou=External Contacts,dc=brodate,dc=ne
+ t
+uniqueMember: mail=devilwishmaster@hotmail.com,ou=External Contacts,dc=brodate,d
+ c=net
+uniqueMember: mail=design@zanevera.com,ou=External Contacts,dc=brodate,dc=
+ net
+uniqueMember: mail=guy_zane@yahoo.com,ou=External Contacts,dc=brodate,dc=ne
+ t
+uniqueMember: mail=jp@mittech.edu,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=kevin.woodriff@gmail.com,ou=External Contacts,dc=brodate,dc=
+ net
+uniqueMember: mail=kooz.maknonoinsky@gmail.com,ou=External Contacts,dc=brodatem
+ edia,dc=net
+uniqueMember: mail=matt@dizzler.org,ou=External Contacts,dc=brodate,dc=n
+ et
+uniqueMember: mail=paul@schoolcheato.com,ou=External Contacts,dc=brodate,dc=n
+ et
+uniqueMember: mail=zoom.henderson@gmail.com,ou=External Contacts,dc=brodateme
+ dia,dc=net
+cn: poker
+gidNumber: 50063
+mailLocalAddress: poker@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: poker
+
+dn: cn=pylons-forums,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: pylons-forums
+gidNumber: 50064
+mailLocalAddress: pylons-forums@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: pylons-forums
+
+dn: cn=pylons-kickflip,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: pylons-kickflip
+gidNumber: 50065
+mailLocalAddress: pylons-kickflip@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: pylons-kickflip
+
+dn: cn=pylons-makebanner,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: pylons-makebanner
+gidNumber: 50066
+mailLocalAddress: pylons-makebanner@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: pylons-makebanner
+
+dn: cn=pylons-brodateads,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+cn: pylons-brodateads
+gidNumber: 50067
+mailLocalAddress: pylons-brodateads@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: pylons-brodateads
+
+dn: cn=receipts,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=support@brodateads.com,ou=External Contacts,dc=brodate,dc=
+ net
+cn: receipts
+gidNumber: 50068
+mailLocalAddress: receipts@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: receipts
+
+dn: cn=reports-asimpleworldforme,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=brian@asimpleworldforme.com,ou=External Contacts,dc=brodatemedi
+ a,dc=net
+uniqueMember: mail=samantha@asimpleworldforme.com,ou=External Contacts,dc=brodatem
+ edia,dc=net
+cn: reports-asimpleworldforme
+gidNumber: 50069
+mailLocalAddress: reports-asimpleworldforme@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: reports-asimpleworldforme
+
+dn: mailLocalAddress=brian@asimpleworldforme.com,ou=External Contacts,dc=brodate,dc=net
+cn: asimple
+mailLocalAddress: brian@asimpleworldforme.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: asimple
+
+dn: mailLocalAddress=samantha@asimpleworldforme.com,ou=External Contacts,dc=brodate,dc=net
+cn: asimplesam
+mailLocalAddress: samantha@asimpleworldforme.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: asimplesam
+
+dn: cn=rootmail,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: rootmail
+gidNumber: 50070
+mailLocalAddress: rootmail@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: rootmail
+
+dn: cn=rsvp,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: rsvp
+gidNumber: 50071
+mailLocalAddress: rsvp@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: rsvp
+
+dn: cn=sales,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+cn: sales
+gidNumber: 50072
+mailLocalAddress: sales@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: sales
+
+dn: cn=services,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: services
+gidNumber: 50073
+mailLocalAddress: services@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: services
+
+dn: cn=sometrics,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: sometrics
+gidNumber: 50074
+mailLocalAddress: sometrics@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: sometrics
+
+dn: cn=speakers,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: speakers
+gidNumber: 50075
+mailLocalAddress: speakers@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: speakers
+
+dn: cn=sponsorship,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: sponsorship
+gidNumber: 50076
+mailLocalAddress: sponsorship@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: sponsorship
+
+dn: cn=srpoints,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: srpoints
+gidNumber: 50077
+mailLocalAddress: srpoints@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: srpoints
+
+dn: cn=ss-feedback,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=support,ou=special users,dc=brodate,dc=net
+cn: ss-feedback
+gidNumber: 50078
+mailLocalAddress: ss-feedback@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: ss-feedback
+
+dn: cn=ssladmin,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=netops,ou=groups,dc=brodate,dc=net
+cn: ssladmin
+gidNumber: 50080
+mailLocalAddress: ssladmin@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: ssladmin
+
+dn: cn=teamalpha,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=marlene,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=brodate@solvatenator.com,ou=External Contacts,dc=brodate,dc=net
+cn: teamalpha
+gidNumber: 50082
+mailLocalAddress: teamalpha@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: teamalpha
+
+dn: cn=theuseful_network,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: theuseful_network
+gidNumber: 50083
+mailLocalAddress: theuseful_network@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: theuseful_network
+
+dn: cn=trac,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=Groups,dc=brodate,dc=net
+cn: trac
+gidNumber: 50084
+mailLocalAddress: trac@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: trac
+
+dn: cn=twitter,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: twitter
+gidNumber: 50085
+mailLocalAddress: twitter@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: twitter
+
+dn: cn=valueclick_network,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: valueclick_network
+gidNumber: 50086
+mailLocalAddress: valueclick_network@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: valueclick_network
+
+dn: cn=voicemail,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+cn: voicemail
+gidNumber: 50087
+mailLocalAddress: voicemail@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: voicemail
+
+dn: cn=work.china,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=brodate.china,ou=groups,dc=brodate,dc=net
+cn: work.china
+gidNumber: 50088
+mailLocalAddress: work.china@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: work.china
+
+dn: cn=work,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+cn: work
+gidNumber: 50089
+mailLocalAddress: work@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: work
+
+dn: cn=youtube,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: youtube
+gidNumber: 50090
+mailLocalAddress: youtube@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: youtube
+
+dn: cn=yume_reporting,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: yume_reporting
+gidNumber: 50091
+mailLocalAddress: yume_reporting@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: yume_reporting
+
+dn: cn=z-support,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: z-support
+gidNumber: 50092
+mailLocalAddress: z-support@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: z-support
+
+dn: cn=zanox,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+cn: zanox
+gidNumber: 50093
+mailLocalAddress: zanox@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: zanox
+
+dn: cn=paypalcoins,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: paypalcoins
+gidNumber: 50094
+mailLocalAddress: paypalcoins@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: paypalcoins
+
+dn: cn=paypalgamedev,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: paypalgamedev
+gidNumber: 50095
+mailLocalAddress: paypalgamedev@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: paypalgamedev
+
+dn: cn=paypalmisc,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+cn: paypalmisc
+gidNumber: 50096
+mailLocalAddress: paypalmisc@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: paypalmisc
+
+dn: cn=everyone,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=shela,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zaners,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+mailLocalAddress: everyone@brodate.com
+objectClass: top
+objectClass: groupofuniquenames
+objectClass: inetLocalMailRecipient
+cn: everyone
+description: everyone
+
+dn: uid=margaret,ou=employees,ou=People,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+mobile: 801-941-6527
+homePhone: 801-941-6527
+gtalkid: margaret.thompson
+facebookid: mthompsontime 
+twitterid: mthompsonwiz
+brodategamesid: mthompsonne
+brodateaccess: svn
+brodateaccess: trac
+brodateaccess: verbal
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: juanita
+brodateaccess: partyzone
+uidNumber: 50032
+facsimileTelephoneNumber: +1.515.630.2240
+postalAddress: 111 Elevator St., 5th Floor
+postalCode: 94105
+st: California
+l: San Francisco
+physicalDeliveryOfficeName: Brodate HQ
+c: US
+mailLocalAddress: margaret@brodate.com
+cn: Margaret Thompson
+givenName: Margaret
+gidNumber: 49000
+sn: Thompson
+uid: margaret
+
+dn: uid=rtb,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+gtalkid: rtb@brodate.com
+homePhone: 831.533.4444
+mailLocalAddress: rancid-arista_test@brodate.com
+mailLocalAddress: rancid-admin-arista_test@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+objectClass: ldappublickey
+mobile: 831.555.2345
+brodategamesid: rtb
+postalAddress: 111 Elevator St., 5th Floor
+cn: Ryan McThompson
+st: California
+l: San Francisco
+givenName: Ryan
+gidNumber: 50000
+title: Systems Administrator
+c: US
+postalCode: 94105
+sn: McThompson
+uidNumber: 50046
+mailLocalAddress: rtb@brodate.com
+uid: rtb
+facsimileTelephoneNumber: +1.415.199.0612
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+
+dn: uid=git,ou=special users,dc=brodate,dc=net
+gidNumber: 50004
+loginShell: /sbin/nologin
+cn: gitUser
+homeDirectory: /home/git
+uidNumber: 41009
+objectClass: posixAccount
+objectClass: top
+objectClass: organizationalPerson
+sn: git
+uid: git
+
+dn: uid=git-push,ou=special users,dc=brodate,dc=net
+loginShell: /bin/bash
+sshpublickey: ssh-rsa AAAAB3Nzadfew34EAAAADAQABAAABAQC8yEq7+JDblMsA5NwaMKxIk7+2
+ jH/D3XYw/YsbyQ2Tky2ebrggpLK94YPalJIS6lkmbntMVhijiGy2XJtlv6sKt06UjASdAggDS70kX
+ TigfeJTFs3P7k6LsWUl/6bwCwBA1fxL8LmA0mQPiy3Myr971PFSfEGq9KeE0uMoWeMd2tXiPlpY/2
+ RPFlo+5Q/DMeUei85ty6u5t9RZ9QzmHBMja6sWAGMf3rD6ElNu0GWJKYLZ4mpTG8m0cppWUuHMpJ8
+ FYmdeb7YGA1xFwFK7dPd/1N40ifGYN/$55tcY9h17tYrxpo6vjs2BrQ0XjNw2LVSRf1NgEd2jrw79
+ UA2xiQ8t git-push-key
+gidNumber: 50098
+cn: git-pushUser
+sn: git-push
+homeDirectory: /home/git-push
+uid: git-push
+uidNumber: 41010
+objectClass: posixAccount
+objectClass: top
+objectClass: organizationalPerson
+objectClass: ldappublickey
+
+dn: cn=git-push,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=git-push,ou=special users,dc=brodate,dc=net
+uniqueMember: uid=git,ou=special users,dc=brodate,dc=net
+uniqueMember: cn=dev,ou=Groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: top
+cn: git-push
+gidNumber: 50098
+description: git-push
+
+dn: cn=nginxupdate,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=ops,ou=Groups,dc=brodate,dc=net
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: top
+cn: nginxupdate
+gidNumber: 50099
+description: nginxupdate
+
+dn: cn=jumpaccess,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=shanda,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=brodate,ou=groups,dc=brodate,dc=net
+uniqueMember: cn=contractors,ou=groups,dc=brodate,dc=net
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: top
+cn: jumpaccess
+gidNumber: 50100
+description: jumpaccess
+
+dn: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+mobile: +1.661.313.8485
+gtalkid: colin@brodate.com
+twitterid: colinsd
+brodategamesid: colindingo
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAxGBoAj4L9SRrD1nEFhr6dfxyKrkb
+ vLUcvbjog8dI6vIuN6KAoEiuulvt9MCtNa1+XoryouXQKQk4YWx7Px88FQ7EtVsk0uXL3/IemhmiR
+ gvO334567JEy6Bt2ezC57X9QGOjVsYJErzlSmG3qzTDDbVrBy+pIxPaP6h75g8BXnra+/i9p2vUQu
+ z6Erfgthrt4YksqOkNUzkt+IkDbv/or86ieLhVax6HWrklMFUeNVm8cMOZ4QhAG7pdX/xRASMPW3k
+ vwYbeWAHZHqfBhLmp3IJl5fv3sQ9WJCoUDZ6VlchervMDPmZhKD+wK4uv3KYRmiWF+uOKs23NFhg6
+ 9gq7Nw== colindingo@Colin-Dingo-MacBook-Pro.local
+userPassword:: e01ENX1GcUZ3eVEvR2NHeGJxaHdzZXg1cTNnPT0=
+telephoneNumber: +1.415.911.1233
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Colin Dingo
+st: California
+l: San Francisco
+givenName: Colin
+gidNumber: 50000
+title: Product Marketing Manager
+c: US
+homeDirectory: /home/colin
+postalCode: 94105
+manager: uid=ada,ou=employees,ou=people,dc=brodate,dc=net
+sn: Dingo
+uidNumber: 50053
+mailLocalAddress: colin@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: colin
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+
+dn: cn=translation,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: translation
+gidNumber: 50101
+mailLocalAddress: translation@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: translation
+
+dn: mailLocalAddress=maming@supergames.com,ou=External Contacts,dc=brodate,dc=net
+cn: maming
+mailLocalAddress: maming@supergames.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: maming
+
+dn: cn=mmopartner,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+cn: mmopartner
+gidNumber: 50102
+mailLocalAddress: mmopartner@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: mmopartner
+
+dn: cn=doubleclickreporting,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: doubleclickreporting
+gidNumber: 50103
+mailLocalAddress: doubleclickreporting@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: doubleclickreporting
+
+dn: cn=ops-zmw1,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: ops-zmw1
+gidNumber: 50104
+mailLocalAddress: ops-zmw1@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: ops-zmw1
+
+dn: cn=mightandhero,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=yuanjia@snefg.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=dongchwn@supergames.com,ou=External Contacts,dc=brodatem
+ edia,dc=net
+cn: mightandhero
+gidNumber: 50105
+mailLocalAddress: mightandhero@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: mightandhero
+
+dn: mailLocalAddress=dongchwn@supergames.com,ou=External Contacts,dc=brodate,dc=net
+cn: dong
+mailLocalAddress: dongchwn@supergames.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: dong
+
+dn: mailLocalAddress=yuanjia@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: yuan
+mailLocalAddress: yuanjia@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: yuan
+
+dn: cn=mmooperations,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: mmooperations
+gidNumber: 50106
+mailLocalAddress: mmooperations@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: mmooperations
+
+dn: uid=autobrodate2,ou=special users,dc=brodate,dc=net
+userPassword:: e01ENX1wVUxJN2ROcVdXYkxjcTJDVnQ5SUhBPT0=
+sn: autobrodate2
+brodateaccess: svn
+objectClass: posixAccount
+objectClass: top
+objectClass: brodateuser
+objectClass: organizationalPerson
+loginShell: /sbin/nologin
+cn: autobrodate2User
+gidNumber: 50004
+homeDirectory: /home/autobrodate2
+uidNumber: 41011
+uid: autobrodate2
+
+dn: uid=contact,ou=special users,dc=brodate,dc=net
+mailLocalAddress: contact@brodate.com
+objectClass: posixAccount
+objectClass: top
+objectClass: inetLocalMailRecipient
+objectClass: organizationalPerson
+loginShell: /sbin/nologin
+cn: contactUser
+sn: contactUser
+gidNumber: 50004
+homeDirectory: /home/contact
+uidNumber: 41012
+uid: contact
+
+dn: cn=made,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+cn: made
+gidNumber: 50107
+mailLocalAddress: made@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: made
+
+dn: cn=newsletter,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+cn: newsletter
+gidNumber: 50108
+mailLocalAddress: newsletter@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: newsletter
+
+dn: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+mobile: 1.415.611.1122
+homePhone: 1.651.222.3344
+userPassword:: e01ENX1OWTRhRHpsclVxd3pBenArdWprajBBPT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Christopher Till
+st: California
+l: San Francisco
+givenName: Christopher
+gidNumber: 50000
+title: Accountant
+c: US
+homeDirectory: /home/cyu
+postalCode: 94105
+manager: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Till
+uidNumber: 50064
+mailLocalAddress: cyu@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: cyu
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: cn=cnadops,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+cn: cnadops
+gidNumber: 50109
+mailLocalAddress: cnadops@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: cnadops
+
+dn: mailLocalAddress=zhangyimeng@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: zhang
+mailLocalAddress: zhangyimeng@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: zhang
+
+dn: mailLocalAddress=yanghanyi@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: yanghang
+mailLocalAddress: yanghanyi@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: yanghang
+
+dn: cn=sfoffice,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=justin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cjankos,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=opennms-xmpp,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=shela,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zaners,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+cn: sfoffice
+gidNumber: 50112
+mailLocalAddress: sfoffice@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: sfoffice
+
+dn: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+l: Alameda
+postalAddress: 1 Sand Way
+mobile: 843-111-2333
+website: http://themanintheplan.com
+gtalkid: christopher.powers
+facebookid: cpowersistheman
+twitterid: cpowersisthemantweet
+brodategamesid: cpowers
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAv9b3pCz58bO4RLSGoBl0ovTRWo7m
+ vbiH3uixqO76EtKrwertjbuEUHpn91fFnYiGkGfz8EIPGH80QnnUlVIqyKEE84GXqSdW3iBCokDN4
+ 2JiG3g0iF7wHN223456sQjOeZZLAhmgFFZLG2yBilyKBydI9o1jg1RQuj6xtfdWQs8MBgz/xKQXdu
+ Zxlh0hvrrz/sXZR/z06Fv0/iz2H0+VrAi3DDxcnmBE2of9xh7nF1qpLDSLhL1wdP1GPCYztKgqRPk
+ 7LXKuzvz+JTpvk/fE2k1sfggloPIi5XIOfCrIZy7qB7caGV+q+n5NgrQ8QPLmCfgSUUOBRfzJufOG
+ IuZWXw== chrispowers@Chris-Powers-MacBook-Pro.local
+userPassword:: e01ENX1iRjgzOG50T0JUQ1VtZzZjUTRwZWsfrtgs
+loginShell: /bin/bash
+cn: Christopher Powers
+st: California
+givenName: Christopher
+gidNumber: 50000
+title: Platform Engineer
+c: US
+homeDirectory: /home/christopher
+postalCode: 94105
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+sn: Powers
+uidNumber: 50091
+mailLocalAddress: christopher@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: christopher
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: mailLocalAddress=david@moonlandingmation.com,ou=External Contacts,dc=brodate,dc=net
+cn: davidmoon
+mailLocalAddress: david@moonlandingmation.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: davidmoon
+
+dn: mailLocalAddress=zhenghaoru@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: zheng
+mailLocalAddress: zhenghaoru@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: zheng
+
+dn: mailLocalAddress=yexiaojia@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: yex
+mailLocalAddress: yexiaojia@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: yex
+
+dn: cn=mobile,ou=groups,dc=brodate,dc=net
+uniqueMember: mail=yexiaojia@snefg.com,ou=External Contacts,dc=brodate,dc=ne
+ t
+cn: mobile
+gidNumber: 50113
+mailLocalAddress: mobile@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: mobile
+
+dn: mailLocalAddress=jiangzsgio@supergames.com,ou=External Contacts,dc=brodate,dc=net
+cn: jiang
+mailLocalAddress: jiangzsgio@supergames.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: jiang
+
+dn: mailLocalAddress=guanxiaohong@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: guanxi
+mailLocalAddress: guanxiaohong@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: guanxi
+
+dn: mailLocalAddress=yangyuan.yuan@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: yangyuan
+mailLocalAddress: yangyuan.yuan@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: yangyuan
+
+dn: cn=apps,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+cn: apps
+gidNumber: 50115
+mailLocalAddress: apps@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: apps
+
+dn: cn=android.project.team,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: mail=shimin@snefg.com,ou=External Contacts,dc=brodate,dc=net
+uniqueMember: mail=liujingjing.joe@snefg.com,ou=External Contacts,dc=brodate
+ ,dc=net
+uniqueMember: mail=huangxiaohu@snefg.com,ou=External Contacts,dc=brodate,dc=
+ net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: mail=jiangzsgio@snefg.com,ou=External Contacts,dc=brodate,dc=
+ net
+cn: android.project.team
+gidNumber: 50116
+mailLocalAddress: android.project.team@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: android.project.team
+
+dn: mailLocalAddress=shimin@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: shimin
+mailLocalAddress: shimin@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: shimin
+
+dn: mailLocalAddress=liujingjing.joe@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: liujing
+mailLocalAddress: liujingjing.joe@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: liujing
+
+dn: mailLocalAddress=huangxiaohu@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: huangx
+mailLocalAddress: huangxiaohu@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: huangx
+
+dn: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: ssh-rsa Artty3NzaC1yc2EAAAABIwAAAQEA1HFfQutH5BTYeuPNXv+/8yR0sbde
+ qAFtWYxFtRJQHBQMoDcnjijhCRtd6FmpEvsPTdzAsvZY0Gdo6+E5PrtxloSd/wfpOG8RHDi5Y41zV
+ 2345stAH8H3IziD660FSAaeKeNK3cV3oqR6lX+VMWyQPswOVgDkvD0RdUXQdwk+fgoXoqAMsw5IzY
+ VF+FVCX4GM7reoE7Jr5nQNlU4mj9tZbr591ygheUgy4PHUeh+onMP5c8bgrx4BLfwTj866FIlji7j
+ MNsUwBIdXFhfI1T2FDvtoQWxvbyC4ihsu/x/pyXmbR7HFShsSHQy6k8yV28Ecqp9WAYiRMySmwjtS
+ kkbsfggw john@brodate.com
+mobile: 415.911.1111
+facebookid: johnopete
+twitterid: johnopete
+brodategamesid: johnopete
+userPassword:: e01sfghhR29ZQ3phSmFncU1BbmgrNnZzT1RBPT0=
+gidNumber: 50000
+loginShell: /bin/bash
+cn: John Pete
+st: California
+l: San Francisco
+givenName: John
+postalAddress: 111 Elevator St., 5th Floor
+title: UI Intern
+c: US
+homeDirectory: /home/john
+sn: Pete
+mailLocalAddress: john@brodate.com
+uid: john
+postalCode: 94105
+manager: uid=ryan,ou=employees,ou=people,dc=brodate,dc=net
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+uidNumber: 50097
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+facsimileTelephoneNumber: +1.415.911.1122
+
+dn: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+facsimileTelephoneNumber: 415.555.1233
+telephoneNumber: 415.444.2344
+gtalkid: suzanne@brodate.com
+mobile: 408.480.0156
+userPassword:: e01ENX1hRsdfgwlEYXVoNk5rbTExdzBsTjhnPT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Suzanne Lite
+st: California
+l: San Francisco
+givenName: Suzanne
+gidNumber: 50000
+title: Operations Manager
+c: US
+homeDirectory: /home/suzanne
+postalCode: 94105
+manager: uid=osakajoe,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Lite
+uidNumber: 50099
+mailLocalAddress: suzanne@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: suzanne
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: mailLocalAddress=jiangzsgio@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: jiangz
+mailLocalAddress: jiangzsgio@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: jiangz
+
+dn: mailLocalAddress=yaodoloe@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: yaodo
+mailLocalAddress: yaodoloe@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: yaodo
+
+dn: mailLocalAddress=moyitaottlolo@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: moy
+mailLocalAddress: moyitaottlolo@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: moy
+
+dn: cn=dev-oncall,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+cn: dev-oncall
+gidNumber: 50117
+mailLocalAddress: dev-oncall@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: dev-oncall
+
+dn: cn=brodategamesteam,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=sebastien,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+cn: brodategamesteam
+gidNumber: 50118
+mailLocalAddress: brodategamesteam@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: brodategamesteam
+
+dn: mailLocalAddress=wangrui.phssslol@snefg.com,ou=External Contacts,dc=brodate,dc=net
+cn: wangrui
+mailLocalAddress: wangrui.phssslol@snefg.com
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: wangrui
+
+dn: mailLocalAddress=shetoome@grandeurchina.com.cn,ou=External Contacts,dc=brodate,dc=net
+cn: shetoome
+mailLocalAddress: shetoome@grandeurchina.com.cn
+objectClass: inetLocalMailRecipient
+objectClass: top
+objectClass: organizationalPerson
+sn: shetoome
+
+dn: uid=akamaiflusher,ou=Special Users,dc=brodate,dc=net
+description: flusher 
+objectClass: top
+objectClass: account
+uid: akamaiflusher
+
+dn: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+cn: Jenny Planto
+sn: Planto
+sshpublickey: ssh-dss AAAAB3NzaC1kc3MAAACBAMnMDJGJoTAyd649In0MRnRQ/TqzFBAxSMun
+ AzEwAD85aWdf89898lpQ01SkAw7U2UvNA9onglDtjKqXkRJzENtf+9Noz9jLJSbC9D9SmCMt7zXS3
+ OlbmV6fjhmpoioiuou6Hk1A/8dILQJ9AB4/EJzdYdBf3gbR3tj+0++BdU4rAAAAFQDMEl4Rzoppxk
+ 52EbJ5ibnbmVAS8wAAAIBeaTY7+1rriSX/Cr4GjVaT5ktOxKEJzJBBBXIf65uAKzU4fZwsFtvNcUv
+ 9antaGv0nKjl1iLzsVIKz9UQyrKa6q3VFeo+tBdoHCwJEHfwF6Deoij5arV5tz4Bm+wdAlhTwIFT1
+ ntRBTQzcvRzLngfasdHR/a6KGEerW8udkjDvZAAAAIBV0lLj5vpNof8jIN9t2pzIyr0Bk8qvHK1qy
+ LpPCkmGzBcpT6asdafanS070kCNJ4QJJJbgeMNj99Ab64xO9Md52gHHla/vJMefJ7peJCFSjCFf2+
+ WIc8QwiKZ0DVmlSAkI64Lg1fqfw7CD8yBn7hP4UKToz+dg4t3wDSydAasdfsadfj jenny@admins-M
+ acBook-Pro-2.local
+yimid: jennyplanto
+msnid: jplanto
+aimid: therealplanto
+brodategamesid: plantogirl
+mobile: 415-433-1122
+userPassword:: e01ENsfg12ZOK2F5NWJ1bGVVQ3hacHFMRU1BPT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+st: California
+l: San Francisco
+givenName: Jenny
+gidNumber: 50000
+title: QA Wizard
+c: US
+homeDirectory: /home/jenny
+postalCode: 94105
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uidNumber: 50113
+mailLocalAddress: jenny@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: jenny
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: cn=community,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=weston,ou=employees,ou=people,dc=brodate,dc=net
+cn: community
+gidNumber: 50127
+mailLocalAddress: community@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: community
+
+dn: cn=brodategames-admin,ou=groups,dc=brodate,dc=net
+cn: brodategames-admin
+uniqueMember: uid=weston,ou=employees,ou=people,dc=brodate,dc=net
+gidNumber: 50128
+mailLocalAddress: brodategames-admin@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: brodategames-admin
+
+dn: uid=nhk,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3rtoklJEfe45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: 514.548.2233
+postalAddress: 111 Elevator St., 5th Floor
+cn: Nick Koopa
+st: California
+l: San Francisco
+givenName: Nick
+gidNumber: 50000
+title: Platform Engineer
+c: US
+postalCode: 94105
+sn: Koopa
+uidNumber: 50114
+mailLocalAddress: nhk@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: nhk
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: cn=tpoffice,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+cn: tpoffice
+gidNumber: 50129
+mailLocalAddress: tpoffice@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: tpoffice
+
+dn: uid=benjamindoom,ou=employees,ou=people,dc=brodate,dc=net
+mobile: +886.952.324.556
+telephoneNumber: +886.2.4567.3234ext61
+gtalkid: benjamin.doom@brodate.com
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAnuTeaFWw3iqWLj4pIE7fIkCFGqOo
+ xmDxGRydKLURpffalkdf998890dJRhjT1X5Hm9FpY0UZWyo4lBN/IY/O9OmapeNd3k2AT6spnfWrX
+ okhK1qjbGadfllzDTjd4c6uuC0fH7Np0XwUd/3k4xsEobJ4g75y5Sg13tYYy3Ew3iD0sTIQSP5Tpt
+ fJ9l397ce+G3triSw37gXECAZA76eyKaCx2PHx5rUf2qqJIatpryzHWMtCTXD8mMSGm0tEOXjznIK
+ vVnmgmACs4Lj8K+Bmr8WgSs+qzTDn9dtJFqxfSciVZLCkS+c8miiofA3FZfXG+ywhPgOqJqAlsVGr
+ 0P44334f kmdoom@inflame.local
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCdsnyq7L2rJLGYCviLd9TrWoR5
+ XNasdf00St5nMs0UR0HAnPF5g4vCMmqgBJYo4D2c21gWoMERw3dpII/LA+joT5CiIuO/ky2f13Vfl
+ bv88779ddz/A1LDsSyvyyrTYgpTM9et7zDn6AOdlT9X3gGjwkvY8HAXuuIjrYBvmqGiqk/T3iyPhD
+ x8gasdf0eOEcLB18D07AvXD2g+39f3C049zb3tIumrW0gj/rfn+39s22lTOudV45whnVoIYjuwYTt
+ zGwRbdzTX3zE2UoUsHSh9MO3MsBh+9Jx5E504nkHZEa+ZZYOuiiQQvx3h9kQf3WyA68Epm9jeza0+
+ vadsfasd kmdoom@trianglesign.local
+sshpublickey: ssh-rsa A23434NzaC1yc2EAAAABIwAAAQEA0QB5EiqAmUb049LFMjnbLHIm2j+h
+ 0kkup/hX4sja76324987234jsuDtr+m9ABnIGChiuQNKGesQmW1WYkb1RPuVYFZ3SQAjmRov8T4xe
+ T11uzasdfsdfaadsftJZRo1M0f4BmpnHLRvTFRF3JaSzM0yGzY7W42T9dHWOJZKoulb/b8DQza6RY
+ zAnkxBrcci4+MiKwEQQadsfadsssZzx7xTC+AofhmXQQvGiD7CQKFTISQIBui/LyqGP+E+vVkIW1/
+ F4I7RkHgIhspXy3JXfshsPQ67qhiLonYhlAb9Z+NVvRcCPIu+UHUyPBgfl+qcsOP6B22S0/vE/umN
+ Bpasd== kmwang@Kmac
+sshpublickey: ssh-rsa AasdffNzaC1yc2EAAAADAQABAAABAQDnMvzSgyRly6xLcBylO3Ozz8+I
+ JHasdf9MybU9ESvQxdf9f9mRCjegOhRJ17Xg46F5BH/oBBkod2SnLDLEspNXNP7TdcklGKimDM98k
+ DVasdf94Z15CIY8zp40A18Q9LtV2lnGERX71SBNIAvvGf4kYF/S6S7+doEZykVrzNyKJ0GtW1L+bM
+ Kdf909f0zO2oMF5PGbiC/1N+RPIqR6yL5BcxdaX9nwvv11v0u0Ht7Ame9+Mss4kLj3aHNRZD+paBn
+ LvuGKrOrwEsZq8ZveTj82T/J3NAFazhLmXVTd4stTlTlybC/GtvZWSNYztk2Xx8vsgFT8reOR5FNM
+ 7vgP1dNx benjamin.doom@doom.brodate.net
+sshpublickey: ssh-rsa AAAasdzaC1yas2EAAAADAQABAAABAQDH/Tx3mk1nPKofd74IKALXGHnr
+ MvVI65fLoUd8Tp4ojWrG0SE898f2tV+uSb67D4/FUkmCGHSsFcs5VFgjOsydT72A+eFMYHbFsHabg
+ HkL/TAfWvUln239423lllfasdflNseCnGx/i5c5GlQi93ytzG6bmxORB2VfrdmWWTcBL/0Cl70P1c
+ uoBPYLcKskEGCBFKaEWVdRaJ1Fl66ra9yW4DPFGXicLN70ZGn4RGYsPYW78BQXEiZooSpnMU5HHK8
+ dddw9Y8G9K5M/hpFODSwyhJQGdlg7fdsafO3E0VdWtgKWBOReIU/972cTeDBdrqGRmHX2V1CpwgST
+ vdyxasdf kmwang@kummmodo
+facebookid: Benjamin Doom
+twitterid: doomleader
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+postalAddress: 11F-1, 547 townsend Rd
+loginShell: /bin/bash
+cn: Benjamin Doom
+st: Taiwan
+l: Taipei City
+givenName: Benjamin
+gidNumber: 50000
+title: Engineer
+c: TW
+homeDirectory: /home/benjamin.doom
+postalCode: 11074
+manager: uid=eric.tiger,ou=employees,ou=People,dc=brodate,dc=net
+sn: Doom
+uidNumber: 50116
+mailLocalAddress: benjamin.doom@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: benjamin.doom
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=billtomahak,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCamFkFheiWunvF/lSJRUeA0gxS
+ 3EPwpAM96BiTwocGelQt6eMPRSTieP2ZrFQ+DfSX9zrCUmfb1sdiotVtjKNqUC96J5hdBk2BqWchP
+ AvrqVFrbxV52hC+fwtxzzsZIYaUggeY4cR/2QkVPANcIz2asdfkj;ldii2239080))jdfuuadoouc
+ yE1/CUA2zNlmINm6hAUwhT0b/FCI9FT7favAs2ci7OjFUHmAxZ57F0vJuP/OXAJBu/nJd9cN8A1Tq
+ yMvc0+uQJcVV3mB5ujgoRqelfIJeDxLxNiXRJBOG7Vw2tOyexaFfdfadsf09080adflJSDLFOU222
+ Mrgk234 bill.tomahak@brodate.com
+telephoneNumber: +886.2.8232.2323
+mobile: +886-928-444-002
+msnid: tomahakwiz
+gtalkid: tomahakwiz
+facebookid: tomaka
+twitterid: dmxtoma
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+postalAddress: 11F-1, 547 Ting S Rd
+loginShell: /bin/bash
+cn: Bill Tomahak
+st: Taiwan
+l: Taipei City
+givenName: Bill
+gidNumber: 50000
+title: Engineer
+c: TW
+homeDirectory: /home/bill.tomahak
+postalCode: 11074
+manager: uid=eric.tiger,ou=employees,ou=People,dc=brodate,dc=net
+sn: Tomahak 
+uidNumber: 50117
+mailLocalAddress: bill.tomahak@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: bill.tomahak
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=alvinlordry,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sshpublickey: ssh-dss AAA33fkkkjasdoi))ACBAKAwJupEIo2aS5KiSLYms1zZ9lviwBAvzSDK
+ Nmva4nCEMmUIbMsOitp7a70bhVQVxR6z66idkM1xb3amtwPgCTEkyQigK0ITrFL2GXB6OZhe6q/he
+ LnQGFX/Zi1QlZSxbRyF213239SkdfjoOOfjalki9l6gTI5wtSyrqAwvmWbpAAAAFQCYSBQ5AoZ4TP
+ IWAyHDjUn9Hgisssssssxx4lsdkfj(#$lkjdfkH9JN7CvL/+foqvyzcdXxZUDd26fcnMBv+i3mOqn
+ 4WuyPjbtfBDj4HSIOUdfofoauuoobPnXwfcq4KDS2naBEUfqiS320+xWI9ezYo8WPfQZMBpJC5cq0
+ DvrCgQWIkZNKf3NTwQlxrXGrAMMRuX7kJYi2FQAAAIEAm2EI4NHq1rZSoZr44ax/96/BeMjg9VcUL
+ DY8EcsyE2ln1lubdEFJ7ek6aijRbcHFXUdoUFSPizdMIjv9LBUDVLN386sSWX5XRZapRwx878j+hj
+ LaLC0AhWXngkIfzxO4BJkH2Tw54cRbcxN4+kJisbr3cSFthyQ4Kxousdafofjkd alvin.lordrymato-M
+ acBook-Pro.local
+mobile: +8863400442
+msnid: lordy@c
+gtalkid: lordy12223@gmail.com
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+postalAddress: 11F-1, 547 townsend S Rd
+loginShell: /bin/bash
+cn: Alvin Lordry
+st: Taiwan
+l: Taipei City
+givenName: Alvin
+gidNumber: 50000
+title: Engineer
+c: TW
+homeDirectory: /home/alvin.lordry
+postalCode: 11074
+manager: uid=eric.tiger,ou=employees,ou=People,dc=brodate,dc=net
+sn: Lordry
+uidNumber: 50118
+mailLocalAddress: alvin.lordry@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: alvin.lordry
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+telephoneNumber: +886.2.2344.4994ext61
+sshpublickey: foo
+brodategamesid: rad
+mobile: +886-935-334-5566
+msnid: ralphmongo.tw
+facebookid: mongo.rad
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+postalAddress: 11F-1, 547 Townsend S Rd
+loginShell: /bin/bash
+cn: Ralph Mongo
+st: Taiwan
+l: Taipei City
+givenName: Ralph
+gidNumber: 50000
+title: Engineer
+c: TW
+homeDirectory: /home/ralph.mongo
+postalCode: 11074
+manager: uid=eric.tiger,ou=employees,ou=People,dc=brodate,dc=net
+sn: Mongo
+uidNumber: 50119
+mailLocalAddress: ralph.mongo@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: ralph.mongo
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=allentruck,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+telephoneNumber: +886.2.2234.3455xt66
+gtalkid: allen.truck@brodate.com
+facebookid: Allen Truck 
+mobile: +886-444-2342-44
+msnid: theatruck@hotmail.com
+twitterid: plustruckallen
+postalAddress: 11F-1, 547 Townsend S Rd
+cn: Allen Truck
+st: Taiwan
+l: Taipei City
+givenName: Allen
+gidNumber: 50000
+title: Unknown
+c: TW
+postalCode: 11074
+sn: Truck
+uidNumber: 50120
+mailLocalAddress: allen.truck@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: allen.truck
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: cn=chat,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=support,ou=special users,dc=brodate,dc=net
+cn: chat
+gidNumber: 50130
+mailLocalAddress: chat@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: chat
+
+dn: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+sn: Murrphy
+cn: Stacy Murrphy
+mobile: 831-432-2222
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+st: California
+l: San Francisco
+givenName: Stacy
+gidNumber: 50000
+title: Manager of HR and Business Operations
+c: US
+homeDirectory: /home/stacie
+postalCode: 94105
+manager: uid=josh,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+uidNumber: 50121
+mailLocalAddress: stacie@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: stacie
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: cn=dev-asia,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+cn: dev-asia
+gidNumber: 50131
+mailLocalAddress: dev-asia@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: dev-asia
+
+dn: uid=russel.peters,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+telephoneNumber: +886.2.2234.3455ext67
+msnid: ecomomotea
+facebookid: Russel Peters 
+brodategamesid: RPETERS
+postalAddress: 11F-1, 547 Townsend S Rd
+cn: Russel Peters
+st: Taiwan
+l: Taipei City
+givenName: Russel
+gidNumber: 50000
+title: Channel Manager
+c: TW
+postalCode: 11074
+sn: Peters
+uidNumber: 50124
+mailLocalAddress: russel.peters@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: russel.peters
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=randybruce,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: 09874455234
+telephoneNumber: 09874455234 
+msnid: none 
+brodategamesid: randyburce
+postalAddress: 11F-1, 547 Townsend S Rd
+cn: Randy Bruce
+st: Taiwan
+l: Taipei City
+givenName: Randy
+gidNumber: 50000
+title: Content Specialist
+c: TW
+postalCode: 11074
+sn: Bruce
+uidNumber: 50125
+mailLocalAddress: randy.bruce@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: randy.bruce
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=ebutts,ou=contractors,ou=people,dc=brodate,dc=net
+gidNumber: 49000
+loginShell: /bin/bash
+cn: Eric Butts
+givenName: Eric
+sshpublickey: foo
+homeDirectory: /home/ebutts
+sn: Butts
+mailLocalAddress: ericsmokeithots@gmail.com
+uid: ebutts
+manager: uid=colin,ou=employees,ou=people,dc=brodate,dc=net
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+uidNumber: 50126
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+
+dn: cn=standup,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=christopher,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=john,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=benjamin.doom,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=bill.tomahak,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=alvin.lordry,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=ralph.mongo,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+uniqueMember: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=zaners,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+cn: standup
+gidNumber: 50132
+mailLocalAddress: standup@brodate.com
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+description: standup
+
+dn: uid=ralphm,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tFGJLie45f1VuOC9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+homePhone: +31 40 3623456
+l: Eindhoven, The Netherlands
+postalAddress: Soundbyte Rd
+mobile: +31 615 345552
+website: http://soundmastersinhouse.net/
+gtalkid: ralphm@soundbytenuggets.nu
+facebookid: ralphsoundddy
+twitterid: ralphsoundtweet
+cn: Ralph Mask
+st: California
+givenName: Ralph
+gidNumber: 50000
+title: Platform Engineer
+c: US
+postalCode: 94105
+sn: Mask
+uidNumber: 50128
+mailLocalAddress: ralphm@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: ralphm
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=weston,ou=employees,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX1uS29UWTlYMEQwRHBEWGRXcUE5Y253PT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: West Larry 
+st: California
+l: San Francisco
+givenName: West
+gidNumber: 50000
+title: Support
+c: US
+homeDirectory: /home/weston
+postalCode: 94105
+manager: uid=ryan,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Larry
+uidNumber: 50129
+mailLocalAddress: weston@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: weston
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=dem,ou=employees,ou=People,dc=brodate,dc=net
+sshpublickey: foo
+sshpublickey: ssh-rsa AAAFFoozaC1yc2EAAAADAQABAAABAQDFmu9/8jRVjiDkqG76W1teFkPm
+ iAbqT8iBpTKVc23434kkkLLlqqnn7iFf018v36TCfO4D8ylilw09QUzjV6Cx5gYELnQByibXrfo2e
+ 30G82FhmfZIxKRmcnvkEJJFKD334GYFpKwa+RPcNJCVirX7E1CFGfiipkdvcvM/+d6nt2PrpwiJOW
+ USdsafk3aZBitDPRiThk/hS1YfVDs7j2e9vErOVtFGV9S3SjHT8P2nt1UyYl94v1Aj+sL51+3OGsl
+ GGKKSo33SeO2lSAdNv3Uew5C2WRaGJxTjPTrYZZyC9Q27EUXBOKRnwt7S2sEgAMht3GhW6BmVCFhq
+ PQsdfjKK dem@twist.local
+l: Moscow, Russia
+mobile: +7962345500
+gtalkid: demnock@gmail.com
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: docs
+brodateaccess: builds
+brodateaccess: vpn
+facebookid: demnock
+twitterid: demnocktweet
+brodategamesid: demsooolki
+loginShell: /bin/bash
+cn: Dmitry Wishmaster
+givenName: Dmitry
+gidNumber: 49000
+homeDirectory: /home/dem
+manager: uid=bob,ou=employees,ou=people,dc=brodate,dc=net
+sn: Wishmaster
+uidNumber: 50066
+mailLocalAddress: dem@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: dem
+userPassword:: e01ENX1rc345DFBhUExwK1FFgjuoSjNocVRBPT0=
+
+dn: uid=stacey, ou=employees,ou=People,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJFFglwf1V33C9yNlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+mobile: 415222333
+uidNumber: 50035
+cn: Stacey Mogoy
+givenName: Stacey
+gidNumber: 49000
+sn: Mogoy
+mailLocalAddress: stacey@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: stacey
+brodateaccess: trac
+brodateaccess: verbal
+
+dn: uid=ally,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3asdfadfkkJEfe45f1V33333NlNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+postalAddress: 111 Elevator St., 5th Floor
+cn: Allison Pankston
+st: California
+l: San Francisco
+givenName: Allison
+gidNumber: 50000
+title: Office Manager
+c: US
+postalCode: 94105
+sn: Pankston
+uidNumber: 50130
+mailLocalAddress: ally@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: ally
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=ajones,ou=employees,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX1fjsklRFlZ667kdmxtNGl2ZGsxV0JBPT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Alexander Jones
+st: California
+l: San Francisco
+givenName: Alexander
+gidNumber: 50000
+title: Adops
+c: US
+homeDirectory: /home/ajones
+postalCode: 94105
+manager: uid=osakajoe,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Jones
+uidNumber: 50133
+mailLocalAddress: ajones@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: ajones
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=macdisel,ou=employees,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX1j234rfmJW66yhjzFlVlRhcDkwK0JnPT0=
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Mac Goldrush
+st: California
+l: San Francisco
+givenName: Mac
+gidNumber: 50000
+title: Game Reviewer
+c: US
+homeDirectory: /home/macdisel
+postalCode: 94105
+manager: uid=osakajoe,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Goldrush
+uidNumber: 50134
+mailLocalAddress: macdisel@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: macdisel
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=ajonesnew,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+postalAddress: 111 Elevator St., 5th Floor
+cn: alex jones
+st: California
+l: San Francisco
+givenName: alex
+gidNumber: 50000
+title: adops
+c: US
+postalCode: 94105
+sn: hsu
+uidNumber: 50136
+mailLocalAddress: ajones.new@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: ajones.new
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=steve,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2ZingADAQABAAABAQCeiUSDKmJVENHAupOpU/JSTll1
+ BTF7EjFi23434spbNKW54F6GGpQT/kd5nITY4lmtoV+ED0Quc7ekz7uAK32RKOWcbN70MiB/xo1s+
+ 555laldkKNbzk6Ny9J4fRLrw8Wu8haC5p0oAa6q8V5q1gpFl9crRhCx6lHK6nolLqx5T/1pPQJoP8
+ PvaKDKJF8SYKqeM5jBll4VNH0Cr2/WXAv3fk5CcLoDy4HFGXWfQ+Y5OO34SjymS9HxwQX2j9dHmPG
+ 8QV3oJ/9BdvXKCX4burjZsPsENHcLCzoJ+Ta0h93Ezrq2YHLyRYu0Vfm8zIO8kmpOfDqqEeqfre0m
+ fsdfdfda steve@famous-MacBook-Pro.local
+mobile: 415 545 2525
+homePhone: 408 261 1223
+twitterid: vbird1223
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Steve Tizman
+st: California
+l: San Francisco
+givenName: Steve
+gidNumber: 50000
+title: Flash Engineer
+c: US
+homeDirectory: /home/steve
+postalCode: 94105
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+sn: Tizman
+uidNumber: 50137
+mailLocalAddress: steve@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: steve
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=dan,ou=employees,ou=people,dc=brodate,dc=net
+postalAddress: 111 Elevator St., 5th Floor
+loginShell: /bin/bash
+cn: Dan Nelph
+st: California
+l: San Francisco
+givenName: Dan
+gidNumber: 50000
+title: Contractor
+c: US
+homeDirectory: /home/dan
+postalCode: 94105
+manager: uid=ryan,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: Nelph
+uidNumber: 50138
+mailLocalAddress: dan@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: dan
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+userPassword:: e01ENX1fglLoS1ptUkN445fKdStOMWo0VzVBPT0=
+
+dn: ou=sudo,dc=brodate,dc=net
+ou: sudo
+objectClass: top
+objectClass: organizationalunit
+
+dn: cn=sudodbadmin,ou=sudo,dc=brodate,dc=net
+cn: sudodbadmin
+sudoCommand: /opt/bingo/bin/admintools
+sudoHost: ALL
+sudoRunAs: dbadmin
+sudoUser: %dev
+description: dev can run vertica admintools
+objectClass: top
+objectClass: sudorole
+objectClass: organizationalPerson
+sn: sudorole
+
+dn: cn=find,ou=sudo,dc=brodate,dc=net
+sudoOption: !authenticate
+sudoOption: !requiretty
+cn: sudofind
+cn: find
+sudoCommand: /usr/bin/find
+sudoHost: ALL
+sudoRunAs: brodate
+sudoUser: %dev
+description: passwordless find use
+objectClass: top
+objectClass: sudorole
+objectClass: organizationalPerson
+sn: find
+
+dn: cn=updatemg,ou=sudo,dc=brodate,dc=net
+sudoCommand: /home/brodate/src/brodategames-dev/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodategames-staging/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodategames-prod/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodate-dev/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodate-staging/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodate-prod/bin/server-update.sh
+sudoCommand: /home/brodate/src/brodate-dev/bin/do-sync.py
+sudoCommand: /home/brodate/src/brodate-staging/bin/do-sync.py
+sudoOption: !authenticate
+sudoOption: !requiretty
+cn: updatemg
+sudoHost: ALL
+sudoRunAs: brodate
+sudoUser: %dev
+description: passwordless update
+objectClass: top
+objectClass: sudorole
+objectClass: organizationalPerson
+sn: updatemg
+
+dn: cn=dev,ou=sudo,dc=brodate,dc=net
+sudoRunAs: brodate
+sudoUser: %dev
+description: sudo role for dev group
+cn: zdev
+cn: dev
+objectClass: top
+objectClass: sudorole
+objectClass: organizationalPerson
+sn: dev
+sudoCommand: ALL
+sudoHost: ALL
+
+dn: cn=opsroot,ou=sudo,dc=brodate,dc=net
+sudoUser: %ops
+sudoUser: %dev-oncall
+cn: opsroot
+description: root options
+sudoOption: always_set_home
+sudoOption: ignore_local_sudoers
+sudoOption: env_reset
+sudoRunAs: ALL
+sudoHost: ALL
+objectClass: top
+objectClass: sudorole
+objectClass: organizationalPerson
+sn: opsroot
+sudoCommand: ALL
+
+dn: uid=opennms-xmpp,ou=employees,ou=people,dc=brodate,dc=net
+userPassword:: e01ENX0wcFVFFgwleUNRTG556fsPeFZqaTVRPT0=
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: inetLocalMailRecipient
+loginShell: /bin/false
+homeDirectory: /tmp
+postalAddress: 111 Elevator St., 5th Floor
+cn: opennms xmpp
+st: California
+l: San Francisco
+givenName: opennms
+gidNumber: 50000
+title: OpenNMS XMPP
+c: US
+postalCode: 94105
+manager: uid=rtb,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: foo
+sn: xmpp
+uidNumber: 50139
+mailLocalAddress: opennms-xmpp@brodate.com
+uid: opennms-xmpp
+facsimileTelephoneNumber: +1.415.911.1122
+
+dn: uid=zane,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: zanerboy
+description: DONE
+title: Operations Engineer
+gtalkid: zane@brodate.com
+mobile: 415456999
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+uid: zane
+uidNumber: 50140
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+c: US
+postalCode: 94105
+l: San Francisco
+postalAddress: 111 Elevator St., 5th Floor
+st: California
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+sn: Tron
+facsimileTelephoneNumber: +1.415.911.1122
+givenName: Zane
+cn: Zane Tron
+homeDirectory: /home/zane
+gidNumber: 50000
+loginShell: /bin/bash
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+mailLocalAddress: zane@brodate.com
+
+dn: uid=ss-support,ou=Special Users,dc=brodate,dc=net
+mailLocalAddress: ss-support@brodate.com
+uid: ss-support
+givenName: SS
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetorgperson
+objectClass: inetLocalMailRecipient
+sn: Support
+cn: ss-support
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+
+dn: uid=team,ou=Special Users,dc=brodate,dc=net
+mailLocalAddress: team@brodate.com
+uid: team
+givenName: Brodate
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetorgperson
+objectClass: inetLocalMailRecipient
+sn: Team
+cn: team
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+
+dn: uid=feedback,ou=Special Users,dc=brodate,dc=net
+mailLocalAddress: feedback@brodate.com
+uid: feedback
+givenName: Brodate
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetorgperson
+objectClass: inetLocalMailRecipient
+sn: Feedback
+cn: feedback
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+
+dn: uid=jan,ou=employees,ou=people,dc=brodate,dc=net
+mobile: 5102330001
+homePhone: 510234009
+mailLocalAddress: jan@brodate.com
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+manager: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+uidNumber: 50141
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+c: US
+l: San Francisco
+givenName: Jan
+facsimileTelephoneNumber: +1.415.911.1122
+uid: jan
+title: Office Manager
+st: California
+sn: Joelow
+homeDirectory: /home/jan
+sshpublickey: foo
+gidNumber: 50000
+loginShell: /bin/bash
+cn: Jan Joelow
+postalCode: 94105
+postalAddress: 111 Elevator St., 5th Floor
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+
+dn: cn=payroll,ou=Groups,dc=brodate,dc=net
+description: payroll
+gidNumber: 50135
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: inetLocalMailRecipient
+objectClass: top
+mailLocalAddress: payroll@brodate.com
+cn: payroll
+uniqueMember: uid=cyu,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=minfang,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=stacie,ou=employees,ou=people,dc=brodate,dc=net
+
+dn: uid=laurie,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: er5t3X1FFLS2fe45f1VuSFLKolNNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+postalAddress: 111 Elevator St., 5th Floor
+cn: Laurie Bell
+st: California
+l: San Francisco
+givenName: Laurie
+gidNumber: 50000
+title: Data Entry
+c: US
+postalCode: 94105
+sn: Bell
+uidNumber: 50142
+mailLocalAddress: laurie@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: laurie
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=zol,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe434LSFOC9yNlJJSnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: +1 646 245 3344
+homePhone: +1 646 244 2224
+gtalkid: zol@brodate.com
+postalAddress: 111 Elevator St., 5th Floor
+cn: Zol Oscar
+st: California
+l: San Francisco
+givenName: Zol
+gidNumber: 50000
+title: Senior Web Developer
+c: US
+postalCode: 94105
+sn: Oscar
+uidNumber: 50143
+mailLocalAddress: zol@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: zol
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=jason,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: er5t3X1tMWJEfe45f1VuiCuSllUNVnNxOVFRte3r
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+postalAddress: 111 Elevator St., 5th Floor
+cn: Jason Welps
+st: California
+l: San Francisco
+givenName: Jason
+gidNumber: 50000
+title: Marketing
+c: US
+postalCode: 94105
+sn: Welps
+uidNumber: 50144
+mailLocalAddress: jason@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: jason
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+
+dn: uid=nik,ou=employees,ou=people,dc=brodate,dc=net
+description: DISABLED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M=
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+mobile: +1-832-344-2233
+postalAddress: 111 Elevator St., 5th Floor
+cn: Nik Potts
+st: California
+l: San Francisco
+givenName: Nik
+gidNumber: 50000
+title: Senior Web Developer
+c: US
+postalCode: 94105
+sn: Potts
+uidNumber: 50145
+mailLocalAddress: nik@brodate.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: nik
+facsimileTelephoneNumber: +1.415.911.1122
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+
+dn: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+l: San Jose, CA
+postalAddress: 1214 Grovenburg
+mobile: 8983942487
+facebookid: tmoney
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+sshpublickey: foo
+uid: tammy
+postalCode: 44882
+uidNumber: 50146
+cn: Tammy Minks
+c: US
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+loginShell: /bin/bash
+st: California
+sn: Minks
+givenName: Tammy
+homeDirectory: /home/tammy
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+title: Jr. Account Manager
+manager: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+mailLocalAddress: tammy@brodate.com
+gidNumber: 50000
+
+dn: uid=antonio,ou=employees,ou=people,dc=brodate,dc=net
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUiU+rHHg1fXE06T+z30Qh+qE2
+ qhEc2KwKFbgqbVQlM6GzHfCLHi+A2caO0FpWcgvzGpJUH+PG39QI+lEWOUNq3UkzOPX0HYxR5OLNw
+ 2XDFKLJ3vkvxH+05RmtigOljKr8G2F16gUiAlx7fu5qW5P3K4Vnu3w392GcYDbQ68htNn2xmXgLOv
+ 7EJetchOMZ7vqOJFSOWIEUhj2+FpUEsnZSaoRNtwtZ5RxCVF/gdYGq8ipphxM7lqxgqHVZf0p2LP/
+ zz7W084FJSDkj3440kdjfGmHtPY3z1muMeZWUJOaou3prLyd+mldapyPUCY5sIUkUQtkK5UzyDN5/
+ zWMkDoXd antonio@brodate.com
+mobile: 4154452442
+facebookid: antonioponyio
+userPassword:: e01ENX1BV3UyQFJLSKDNMStGT0M2RmFTOUFnPT0=
+facsimileTelephoneNumber: +1.415.911.1122
+loginShell: /bin/bash
+uidNumber: 50147
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+uid: antonio
+postalCode: 94105
+st: California
+sn: Tran
+givenName: Antonio
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: Antonio Tmoney
+homeDirectory: /home/antonio
+c: US
+l: San Francisco
+postalAddress: 111 Elevator St., 5th Floor
+gidNumber: 50000
+mailLocalAddress: antonio@brodate.com
+title: Front-End Developer
+
+dn: uid=shela,ou=employees,ou=people,dc=brodate,dc=net
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+postalAddress: 111 Elevator St., 5th Floor
+givenName: Shela
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+uid: shela
+title: Office Assistant
+postalCode: 94105
+homeDirectory: /home/shela
+uidNumber: 50148
+gidNumber: 50000
+mailLocalAddress: shela@brodate.com
+facsimileTelephoneNumber: +1.415.911.1122
+st: California
+manager: uid=stacey,ou=employees,ou=People,dc=brodate,dc=net
+sn: Rogers
+sshpublickey: foo
+cn: Shela Rogers
+loginShell: /bin/bash
+c: US
+l: San Francisco
+
+dn: uid=michael,ou=employees,ou=people,dc=brodate,dc=net
+mobile: 517553004
+telephoneNumber: 5173342240
+sshpublickey: ssh-rsa AAAAB3NzaC1yc2EAAAADASAAAJFKAQC0tBSQTt+MU9SyI3Yohy35TJJM
+ lHogiNjU0gVqsDSKFJSDKFJibZHSE0/O5CfvacApWdSifPEZdm5vIQrstu2j4bcbaLG0NaReQitbA
+ 3KxrobO7AHdarUgHdYUkitLHwDYlUCoc0+z22MPd85stesLvYUiPTnmnslG6ZS4toPKDSlXEXGqfO
+ wGm6HLasdDOFjjadKJD:93KjFv1b9wCH13U07fAI/5QPuqm440lX/Uuz2JuphZL47XGMudphzT1Bf
+ pboZa+/uWCKDWJ3SGDWWUBOSColYnV14nyQ7FTRugrMC9G1+UN3FRamvjZ9L5kFX8VbH7Bc4b6aP+
+ 8OFFJLSn michael@telport.local
+userPassword:: e01ENX1jUUSOIRDFSQUgrUVRLQSkkfjIIE56YzlnPT0=
+facsimileTelephoneNumber: +1.415.911.1122
+c: US
+st: California
+l: San Francisco
+sn: Piknerton
+loginShell: /bin/bash
+mailLocalAddress: michael@brodate.com
+gidNumber: 50000
+uid: michael
+postalCode: 94105
+givenName: Michael
+homeDirectory: /home/michael
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+manager: uid=emad,ou=employees,ou=people,dc=brodate,dc=net
+cn: Michael Pinkerton
+title: Operations Engineer
+postalAddress: 111 Elevator St., 5th Floor
+uidNumber: 50149
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+
+dn: uid=zane-o,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+c: US
+l: San Francisco
+postalAddress: 111 Elevator St., 5th Floor
+st: California
+sn: wiltron
+mailLocalAddress: zane-o@brodate.com
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: brodategames
+brodateaccess: builds
+brodateaccess: docs
+cn: zaner wiltron
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+title: Ops
+facsimileTelephoneNumber: +1.415.911.1122
+uidNumber: 50150
+uid: zane-o
+postalCode: 94105
+givenName: zaner
+gidNumber: 50000
+
+dn: uid=eric.tiger,ou=employees,ou=people,dc=brodate,dc=net
+description: DELETED
+userPassword:: e0NSWVBUfU9MelgueWo2NTg2N3M= 
+homeDirectory: /dev/null
+loginShell: /sbin/nologin
+sshpublickey: foo
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: ldappublickey
+objectClass: brodateUser
+objectClass: inetLocalMailRecipient
+uid: eric.tiger
+brodateaccess: trac
+brodateaccess: svn
+brodateaccess: verbal
+brodateaccess: juanita
+brodateaccess: partyzone
+brodateaccess: pylons
+brodateaccess: docs
+postalCode: 11074
+st: Taiwan
+sn: Tiger
+gidNumber: 50000
+postalAddress: 11F-1, 547 Townsend S Rd
+mailLocalAddress: eric.tiger@brodate.com
+cn: Eric Tiger
+title: Sales
+givenName: Eric
+uidNumber: 50151
+c: TW
+l: Taipei City
+
+dn: cn=taghelp,ou=groups,dc=brodate,dc=net
+uniqueMember: uid=jenny,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=tammy,ou=employees,ou=people,dc=brodate,dc=net
+uniqueMember: uid=suzanne,ou=employees,ou=people,dc=brodate,dc=net
+cn: taghelp
+gidNumber: 50136
+mailLocalAddress: taghelp@brodate.com
+description: taghelp
+objectClass: groupofuniquenames
+objectClass: posixgroup
+objectClass: top
+objectClass: inetLocalMailRecipient
