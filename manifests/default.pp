@@ -53,9 +53,14 @@ ldap::define::schema {'dyngroup':
   source => 'puppet:///modules/ldap/schema/dyngroup.schema',
 }
 
-exec {'input_output.ldif':
+#exec {'input_output-cn.ldif':
+#  require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"]], 
+#  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output.ldif'
+#}
+
+exec {'input_output-uid.ldif':
   require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"]], 
-  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output.ldif'
+  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output-uid.ldif'
 }
 
 exec {'input_ldap_test_data.ldif':
