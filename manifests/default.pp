@@ -6,7 +6,7 @@ node default {
   class { 'ldap':
     server      => true,
     ssl         => false,
-    before      => Exec['input_output.ldif'],
+    before      => Exec['input_output-uid.ldif'],
   }
 }
 
