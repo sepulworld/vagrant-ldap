@@ -2,11 +2,13 @@ exec { "apt-get update":
   path => "/usr/bin",
 }
 
+$testdata = "output-uids.ldif"
+
 node default {
   class { 'ldap':
     server      => true,
     ssl         => false,
-    before      => Exec['input_output-uid.ldif'],
+    before      => Exec["${testdata}"],
   }
 }
 
@@ -53,17 +55,12 @@ ldap::define::schema {'dyngroup':
   source => 'puppet:///modules/ldap/schema/dyngroup.schema',
 }
 
-#exec {'input_output-cn.ldif':
-#  require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"]], 
-#  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output.ldif'
-#}
-
-exec {'input_output-uid.ldif':
+exec {"$testdata":
   require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"]], 
-  command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/output-uid.ldif'
+  command   => "/usr/bin/ldapadd -w test -D 'cn=dsadmin,dc=brodate,dc=net' -H ldap://localhost -f /vagrant_data/deploy/${testdata}"
 }
 
 exec {'input_ldap_test_data.ldif':
-  require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"], Exec['input_output-uid.ldif']], 
+  require   => [Ldap::Define::Schema["dyngroup", "inetorgperson", "brodate", "sudo", "misc", "openssh"], File["/etc/ldap/schema/nis.schema"], Exec["$testdata"]], 
   command   => '/usr/bin/ldapadd -w test -D "cn=dsadmin,dc=brodate,dc=net" -H ldap://localhost -f /vagrant_data/deploy/ldap_test_data.ldif -c'
 }

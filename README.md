@@ -7,6 +7,10 @@ Provide custom schemas in /modules/ldap/files/schema/  Then define them in manif
 
 in ldap/output.ldif there is 1000 randomly generated directory users and information.  You can add your own users and attributes here if you would like.  Just make sure you follow OpenLDAP default schemas or install your own schemas for testing.
 
+Also, ldap/output-uids.ldif has random users associated using uid instead of cn value.
+
+You can switch between the 2 user entry variations by modifying the $testdata variable in manifests/default.pp
+
 Clone this repo then run 
 
 ```
